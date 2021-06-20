@@ -1,0 +1,13 @@
+@media (max-width: 900px) {
+    .map_block {
+        padding-top: 50px;
+    }    
+}
+
+@media (max-width: 320px) {
+    .map_block {
+        .map {
+            height: 425px;
+        }
+    }
+}

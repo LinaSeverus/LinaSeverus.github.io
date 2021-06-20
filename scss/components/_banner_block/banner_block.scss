@@ -1,0 +1,115 @@
+.banner_block { 
+    background-color: $color-1;
+    padding: 107px 0 100px;
+    text-align: center;
+
+    h1 {
+        font-family: 'Lato', sans-serif;
+        font-size: 40px;
+        font-weight: 900;
+        color: white;
+        @include media-font-size (320px, 30px);
+    }
+    p {
+        font-size: 16px;
+        margin-bottom: 35px;
+        color: white;
+        @include media-font-size (320px, 14px);
+    }
+    form {
+        margin-bottom: 50px;
+        .user-icon {
+            position: relative;
+            input:focus +svg {
+                color: $color-icon-3;
+            } 
+            svg {
+                position: absolute;
+                left: 20px;
+                top: 15px;
+                color: #6e6e6e;
+                
+            }
+        }
+        .envelope-icon {
+            position: relative;
+            input:focus +svg {
+                color: $color-icon-3;
+            } 
+            svg {
+                position: absolute;
+                left: 20px;
+                top: 15px;
+                color: #6e6e6e;
+            }
+        }
+        .tel-icon {
+            position: relative;
+            input:focus +svg {
+                color: $color-icon-3;
+            } 
+            svg {
+                position: absolute;
+                left: 20px;
+                top: 15px;
+                color: #6e6e6e;
+            }
+        }
+        input {
+            border: none;
+            font-size: 13px;
+            padding: 15px 5px 15px 42px;
+        }
+        button {
+            background-color: $color-2;
+            border: none;
+            color: white;
+            width: 100%;
+            padding: 18px 0;
+            border-radius: 3px;
+            
+            &:hover {
+                background-color: #e0b468;
+                transition: .3s;
+                
+            }
+        }
+    }
+    .carousel {
+        margin-bottom: -220px;
+              .carousel-inner {
+            position: relative;
+            .labtop {
+                width: 50%;
+            }
+            .carousel-item {
+                position: absolute;
+                width: 35%;
+                top: 17px;
+                left: 32.5%;
+            }
+        }
+        .carousel-control-prev {
+            left: 18%;
+        }
+        .carousel-control-next {
+            left: 67%;
+        }
+        .carousel-indicators {
+            position: static;
+            padding-top: 20px;
+        }
+        .indicators-style {
+            button {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                border: 2px solid $color-1;
+            }
+        }
+    }    
+
+
+
+
+}

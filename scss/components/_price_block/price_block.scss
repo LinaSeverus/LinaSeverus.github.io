@@ -1,0 +1,91 @@
+.price_block {
+    background-color: #e7edf3;
+    padding: 120px 0 160px;
+
+    .price-article {
+        text-align: center;
+
+        h2 {
+            font-family: 'Lato', sans-serif;
+            font-size: $h2-font-size;
+            font-weight: 900;
+            margin-bottom: 10px;
+            @include media-font-size (320px, 24px);
+        }
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: $paragraph-font-size;
+            font-weight: 400;
+            color: #8d8d8d;
+            margin-bottom: 70px;
+
+        }
+    }
+
+    .price-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #aaa7a7;
+        border-radius: 2px;
+        padding: 50px 30px;
+        background-color: white;
+        &:hover {
+            background-color: $color-1;
+            transition: .7s;
+            transform: scale(1.1);
+            p {
+                color: white;
+            }
+            .per-month, .account, .support {
+                border-bottom: 1px solid white;
+                }
+        }
+
+        p {
+            color: #8d8d8d;
+
+        }
+        .plan {
+            font-family: 'Lato', sans-serif;
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+        .cost {
+            font-family: 'Lato', sans-serif;
+            font-size: 60px;
+            font-weight: bold;
+            color: $color-2;
+        }
+        .per-month {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #8d8d8d;
+        }
+        .account {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #8d8d8d;
+        }
+        .support {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #8d8d8d;
+        }
+        .cloud {
+            padding-bottom: 30px;
+        }
+        .get-started-btn {
+            background-color: $color-2;
+            color: white;
+            padding: 10px 20px;
+            &:hover {
+                background-color: #e0b468;
+                transition: .3s;
+            }
+        }
+    }
+}

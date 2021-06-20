@@ -1,0 +1,6 @@
+
+@mixin media-font-size ($screen-size, $font-size) {
+      @media (max-width: $screen-size) {
+           font-size: $font-size;
+      }
+ }

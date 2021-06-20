@@ -1,0 +1,54 @@
+.happy_clients_block {
+    background-color: $color-2;
+    padding: 150px 0;
+
+    .happy-clients-article {
+        text-align: center;
+
+        h2 {
+            font-family: 'Lato', sans-serif;
+            font-size: $h2-font-size;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 10px;
+            @include media-font-size (320px, 24px);
+        }
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: $paragraph-font-size;
+            font-weight: 400;
+            color: white;
+            margin-bottom: 70px;
+
+        }
+    }
+
+    .review {
+        background-color: white;
+
+        .part-1 {
+            display: flex;
+            padding: 40px 30px 12px;
+
+            img {
+                width: 120px;
+                height: 120px;
+            }
+
+            p {
+                padding-left: 30px;
+                line-height: 20px;
+                font-size: 13px;
+            }
+        }
+        .client-name {
+            
+            padding: 0 0 50px 180px;
+            color: #8d8d8d;
+
+            span {
+                color: $color-2;
+            }
+        }
+    }
+}

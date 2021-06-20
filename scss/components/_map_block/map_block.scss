@@ -1,0 +1,103 @@
+.map_block {
+    padding-top: 150px;
+    margin-bottom: 50px;
+    .map-article {
+        text-align: center;
+        h2 {
+            font-family: 'Lato', sans-serif;
+            font-size: $h2-font-size;
+            font-weight: 900;
+            margin-bottom: 10px;
+            @include media-font-size (320px, 24px);
+        }
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: $paragraph-font-size;
+            font-weight: 400;
+            margin-bottom: 70px;
+        }
+    }
+    form {
+        margin-bottom: 50px;
+        .user-icon {
+            position: relative;
+            input:focus +svg {
+                color: $color-icon-3;
+            } 
+            svg {
+                position: absolute;
+                left: 20px;
+                top: 15px;
+                color: #6e6e6e;
+                
+            }
+        }
+        .envelope-icon {
+            position: relative;
+            input:focus +svg {
+                color: $color-icon-3;
+            } 
+            svg {
+                position: absolute;
+                left: 20px;
+                top: 15px;
+                color: #6e6e6e;
+            }
+        }
+        input {
+            border: 1px solid #6e6e6e;
+            font-size: 13px;
+            color: #6e6e6e;
+            padding: 15px 5px 15px 42px;
+        }
+        button {
+            background-color: $color-2;
+            border: none;
+            color: white;
+            width: 100%;
+            padding: 18px 0;
+            border-radius: 3px;
+            
+            &:hover {
+                background-color: #e0b468;
+                transition: .3s;
+                
+            }
+        }
+    }    
+    .map {
+        background-image: url(../img/map.png);
+        background-size: cover;
+        padding-top: 40px;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .address {
+            width: 300px;
+            height: 300px;
+            margin-bottom: 20px;
+            background-color: #394b50;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 13px;
+            h4 {
+                font-size: 15px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            a {
+                color: $color-2;
+                &:hover {
+                    color: $color-icon-3;
+                }
+            }
+        }
+        
+    }
+}
